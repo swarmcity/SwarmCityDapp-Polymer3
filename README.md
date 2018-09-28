@@ -64,3 +64,9 @@ Optional but highly encouraged: Follow [this commit guide](https://conventionalc
 
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request. :D
+
+### Tools we use
+
+1. [VS Code] (https://code.visualstudio.com/)
+2. VS Code Plugins - lit-html (allows for css editing with hinting in JavaScript)
+3. Git Kraken
