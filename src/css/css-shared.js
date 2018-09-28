@@ -7,7 +7,7 @@ $_documentContainer.innerHTML = `<dom-module id="css-shared">
       *: {
         margin: 0;
       }
-      
+
       *:focus {
         outline: none !important;
       }
@@ -32,11 +32,14 @@ $_documentContainer.innerHTML = `<dom-module id="css-shared">
       }
 
       button {
+        font-size: 22px;
+        font-weight: 800;
         width: 300px;
         border: 0;
         padding: 30px 42px;
         border-redius: 2px;
         box-shadow: var(--sc-black2) 0px 1px 2px -1px;
+        cursor: pointer;
       }
 
       ul {
@@ -62,6 +65,7 @@ $_documentContainer.innerHTML = `<dom-module id="css-shared">
         color: var(--sc-black1);
         text-decoration: none;
         border-bottom: 1px dotted var(--sc-black1);
+        line-height: 2;
       }
 
       .bold-1 a, p {
@@ -70,6 +74,17 @@ $_documentContainer.innerHTML = `<dom-module id="css-shared">
 
       .light-1 a, p {
         font-weight: 300;
+      }
+      h1 {
+        font-size:78px;
+        font-weight: 800;
+        line-height: 0.9
+      }
+      small {
+        font-size:0.45em;
+        font-weight: 300;
+        min-width: 100%;
+        display: block;
       }
 
     </style>
