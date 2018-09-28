@@ -20,7 +20,7 @@ if you need to install node you can [Download Node Here!](https://nodejs.org/en/
 ### Install Polymer CLI
 
 ```
-$ sudo npm install --unsafe-perm -g
+$ sudo npm install polymer-cli --unsafe-perm -g
 ```
 
 
