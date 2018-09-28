@@ -13,6 +13,15 @@ class HomeRoute extends PolymerElement {
         .home-top {
           flex: 1;
           background-color: var(--sc-yellow);
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap ;
+        }
+        .home-top div {
+          flex: 1;
+          align-self: flex-end;
+          text-align: center; 
+          padding: 0 0 18vh 0;
         }
         .home-middle {
           height:95px;
@@ -24,10 +33,10 @@ class HomeRoute extends PolymerElement {
           height:100px;
           line-height: 1;
           font-size: 12px;
-          background-color: var(--sc-grey6)
+          background-color: var(--sc-grey6);
         }
         button {
-          background-color: var(--sc-yellow2)
+          background-color: var(--sc-yellow2);
         }
         h5 {
           font-size: 12px;
@@ -35,12 +44,12 @@ class HomeRoute extends PolymerElement {
       </style>
 
       <div class="container home-top">
-        <div>
-          <h1><small>Welcome to </small>swarm. city</h1>
-        </div>
-        <div>
-          <button tabindex="1" class="button">enter here <small>Boardwalk v3.0</small></button>
-        </div>
+          <div>
+            <h1><small>Welcome to </small>swarm. city</h1>
+          </div>
+          <div>
+            <button tabindex="1" class="button">enter here <small>Boardwalk v3.0</small></button>
+          </div>
       </div>
 
       <div class="container home-middle">
