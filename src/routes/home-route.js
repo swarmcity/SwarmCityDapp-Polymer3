@@ -6,12 +6,35 @@ class HomeRoute extends PolymerElement {
     return html`
       <style include="css-shared">
         :host {
-          display: block;
+          display: flex;
           min-height: 100vh;
+          flex-direction: column;
+        }
+        .home-top {
+          flex: 1;
+          background-color: var(--sc-yellow);
+        }
+        .home-middle {
+          height:95px;
+          line-height: 6;
+          font-size: 12px;
+          background-color: var(--sc-white1)
+        }
+        .home-bottom {
+          height:100px;
+          line-height: 1;
+          font-size: 12px;
+          background-color: var(--sc-grey6)
+        }
+        button {
+          background-color: var(--sc-yellow2)
+        }
+        h5 {
+          font-size: 12px;
         }
       </style>
 
-      <div class="home-top">
+      <div class="container home-top">
         <div>
           <h1><small>Welcome to </small>swarm. city</h1>
         </div>
@@ -20,8 +43,8 @@ class HomeRoute extends PolymerElement {
         </div>
       </div>
 
-      <div class="home-middle">
-        <ul>
+      <div class="container home-middle">
+        <ul class="horizontal link-blue bold-1">
           <li><a tabindex="2" href="https://thisis.swarm.city/" target="_blank">What is Swarm City?</a></li>
           <li><a tabindex="3" href="http://support.swarm.city/" target="_blank">Support</a></li>
           <li><a tabindex="4" href="http://support.swarm.city/" target="_blank">FAQ</a></li>
@@ -29,9 +52,9 @@ class HomeRoute extends PolymerElement {
         </ul>
       </div>
 
-      <div class="home-bottom">
-        <div>Find Swarm City on</div>
-        <ul>
+      <div class="container home-bottom">
+        <ul class="horizontal link-black light-1">
+          <h5>Find Swarm City on</h5>
           <li><a tabindex="6" href="https://riot.im/app/#/group/+swarmcity:matrix.org" target="_blank">Riot</a></li>
           <li><a tabindex="7" href="https://slackinvite.swarm.city" target="_blank">Slack</a></li>
           <li><a tabindex="8" href="https://medium.com/swarm-city-times" target="_blank">Medium</a></li>
