@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+    <title>home-route</title>
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
+    <script src="../node_modules/wct-browser-legacy/browser.js"></script>
+    <script type="module" src="../src/routes/home-route.js"></script>
+  </head>
+  <body>
+    <test-fixture id="BasicView">
+      <template>
+        <home-route></home-route>
+      </template>
+    </test-fixture>
+
+    <script type="module">
+      suite('home-route tests', function() {
+
+        test('Enter Button should exist', function() {
+          var myView = fixture('BasicView');
+          var button = myView.shadowRoot.querySelector('.button');
+          assert.equal(button.textContent, 'enter here Boardwalk v3.0');
+        });
+
+        test('h1 tag should exist', function() {
+          var myView = fixture('BasicView');
+          var title = myView.shadowRoot.querySelector('h1');
+          assert.equal(title.textContent, 'Welcome to swarm. city');
+        });
+
+        test('What is Swarm City link should exist', function() {
+          var myView = fixture('BasicView');
+          var anchor = myView.shadowRoot.querySelector('.home-middle li:nth-child(1) a');
+          assert.equal(anchor.textContent, 'What is Swarm City?');
+        });
+
+        test('Support link should exist', function() {
+          var myView = fixture('BasicView');
+          var anchor = myView.shadowRoot.querySelector('.home-middle li:nth-child(2) a');
+          assert.equal(anchor.textContent, 'Support');
+        });
+
+        test('FAQ link should exist', function() {
+          var myView = fixture('BasicView');
+          var anchor = myView.shadowRoot.querySelector('.home-middle li:nth-child(3) a');
+          assert.equal(anchor.textContent, 'FAQ');
+        });
+
+        test('Advisors link should exist', function() {
+          var myView = fixture('BasicView');
+          var anchor = myView.shadowRoot.querySelector('.home-middle li:nth-child(4) a');
+          assert.equal(anchor.textContent, 'Advisors');
+        });
+
+        test('Riot link should exist', function() {
+          var myView = fixture('BasicView');
+          var anchor = myView.shadowRoot.querySelector('.home-bottom li:nth-child(1) a');
+          assert.equal(anchor.textContent, 'Riot');
+        });
+
+        test('Slack link should exist', function() {
+          var myView = fixture('BasicView');
+          var anchor = myView.shadowRoot.querySelector('.home-bottom li:nth-child(2) a');
+          assert.equal(anchor.textContent, 'Slack');
+        });
+
+        test('Medium link should exist', function() {
+          var myView = fixture('BasicView');
+          var anchor = myView.shadowRoot.querySelector('.home-bottom li:nth-child(3) a');
+          assert.equal(anchor.textContent, 'Medium');
+        });
+      
+        test('Github link should exist', function() {
+          var myView = fixture('BasicView');
+          var anchor = myView.shadowRoot.querySelector('.home-bottom li:nth-child(4) a');
+          assert.equal(anchor.textContent, 'Github');
+        });
+
+        test('Twitter link should exist', function() {
+          var myView = fixture('BasicView');
+          var anchor = myView.shadowRoot.querySelector('.home-bottom li:nth-child(5) a');
+          assert.equal(anchor.textContent, 'Twitter');
+        });
+
+        test('Facebook link should exist', function() {
+          var myView = fixture('BasicView');
+          var anchor = myView.shadowRoot.querySelector('.home-bottom li:nth-child(6) a');
+          assert.equal(anchor.textContent, 'Facebook');
+        });
+
+        test('Youtube link should exist', function() {
+          var myView = fixture('BasicView');
+          var anchor = myView.shadowRoot.querySelector('.home-bottom li:nth-child(7) a');
+          assert.equal(anchor.textContent, 'Youtube');
+        });
+      
+        test('Reddit link should exist', function() {
+          var myView = fixture('BasicView');
+          var anchor = myView.shadowRoot.querySelector('.home-bottom li:nth-child(8) a');
+          assert.equal(anchor.textContent, 'Reddit');
+        });
+
+      });
+    </script>
+  </body>
+</html>

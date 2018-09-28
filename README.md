@@ -2,4 +2,6 @@
 
 [![Build Status](https://travis-ci.org/swarmcity/SwarmCityDapp-Polymer3.svg?branch=master)](https://travis-ci.org/swarmcity/SwarmCityDapp-Polymer3)
 
-# Swarm City Site
+# Swarm City Dapp
+
+> ## 🛠 Status: In Development

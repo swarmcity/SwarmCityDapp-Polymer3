@@ -1,16 +1,17 @@
 {
-  "name": "polymer-starter-kit",
-  "version": "4.0.0",
-  "description": "A starting point for Polymer apps",
-  "author": "The Polymer Authors",
-  "license": "BSD-3-Clause",
-  "repository": "Polymer/polymer-starter-kit",
+  "name": "swarm-city",
+  "version": "1.0.0",
+  "description": "Swarm City",
+  "author": "Swarm City Creators",
+  "license": "MIT",
+  "repository": "swarmcity/SwarmCityDapp-Polymer3",
   "scripts": {
     "start": "polymer serve",
     "build": "polymer build",
     "lint": "polymer lint",
     "test": "polymer test",
-    "test:integration": "polymer build # test that psk builds without error with the CLI"
+    "local": "polymer lint && polymer test && polymer build",
+    "test:integration": "polymer build"
   },
   "dependencies": {
     "@polymer/app-layout": "^3.0.0-pre.15",
@@ -19,8 +20,6 @@
     "@polymer/iron-iconset-svg": "^3.0.0-pre.15",
     "@polymer/iron-media-query": "^3.0.0-pre.15",
     "@polymer/iron-pages": "^3.0.0-pre.15",
-    "@polymer/iron-selector": "^3.0.0-pre.15",
-    "@polymer/paper-icon-button": "^3.0.0-pre.15",
     "@polymer/polymer": "^3.0.0",
     "@webcomponents/webcomponentsjs": "^2.0.0"
   },
