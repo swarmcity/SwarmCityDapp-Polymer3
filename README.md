@@ -11,7 +11,7 @@
 ```
 $ node -v
 ```
-if you need to install node you can [Download Node](https://nodejs.org/en/download/)
+if you need to install node you can [Download Node Here!](https://nodejs.org/en/download/)
 
 ### Install Polymer CLI
 
@@ -32,19 +32,19 @@ git clone https://github.com/swarmcity/SwarmCityDapp-Polymer3.git
 npm install
 ```
 
-### serve the site
+### Serve the site
 
 ```
 npm run start
 ```
 
-### lint the code
+### Lint the code
 
 ```
 npm run lint
 ```
 
-### run unit tests
+### Run unit tests
 
 ```
 npm run test
