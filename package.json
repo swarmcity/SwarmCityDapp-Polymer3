@@ -10,6 +10,8 @@
     "build": "polymer build",
     "lint": "polymer lint",
     "test": "polymer test",
+    "pack": "npx webpack --config ./webpack/webpack.config.js --mode=production",
+    "packdev": "npx webpack --config ./webpack/webpack.config.js --mode=development",
     "local": "polymer lint && polymer test && polymer build",
     "test:integration": "polymer build"
   },
@@ -24,8 +26,17 @@
     "@webcomponents/webcomponentsjs": "^2.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "bs58": "^4.0.1",
+    "ethjs": "^0.4.0",
+    "ipfs-api": "^24.0.2",
     "polymer-cli": "^1.7.1",
-    "wct-browser-legacy": "^1.0.0"
+    "redux": "^4.0.0",
+    "redux-saga": "^0.16.0",
+    "wct-browser-legacy": "^1.0.0",
+    "web3": "^1.0.0-beta.36",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
   },
   "engines": {
     "node": ">=8.0"
